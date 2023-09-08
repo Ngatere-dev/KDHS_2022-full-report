@@ -1,0 +1,441 @@
+"Background characteristics","Category","Gender","variable","value"
+"Age","-19","Female","Psychological/emotional violence",13
+"Age","-24","Female","Psychological/emotional violence",20
+"Age","-29","Female","Psychological/emotional violence",24
+"Age","-39","Female","Psychological/emotional violence",25
+"Age","-49","Female","Psychological/emotional violence",22
+"Residence","ban","Female","Psychological/emotional violence",19
+"Residence","ral","Female","Psychological/emotional violence",24
+"Marital status","ver married","Female","Psychological/emotional violence",12
+"Marital status","Currently has intimate partner","Female","Psychological/emotional violence",12
+"Marital status","Had intimate partner","Female","Psychological/emotional violence",12
+"Marital status","er married","Female","Psychological/emotional violence",25
+"Marital status","Married/living together","Female","Psychological/emotional violence",26
+"Marital status","Divorced/separated/widowed","Female","Psychological/emotional violence",22
+"Education","education","Female","Psychological/emotional violence",19
+"Education","imary","Female","Psychological/emotional violence",28
+"Education","condary","Female","Psychological/emotional violence",21
+"Education","re than secondary","Female","Psychological/emotional violence",15
+"Wealth quintile","west","Female","Psychological/emotional violence",25
+"Wealth quintile","cond","Female","Psychological/emotional violence",26
+"Wealth quintile","ddle","Female","Psychological/emotional violence",25
+"Wealth quintile","urth","Female","Psychological/emotional violence",22
+"Wealth quintile","ghest","Female","Psychological/emotional violence",17
+"Age","-19","Male","Psychological/emotional violence",16
+"Age","-24","Male","Psychological/emotional violence",24
+"Age","-29","Male","Psychological/emotional violence",21
+"Age","-39","Male","Psychological/emotional violence",19
+"Age","-49","Male","Psychological/emotional violence",16
+"Residence","ban","Male","Psychological/emotional violence",23
+"Residence","ral","Male","Psychological/emotional violence",17
+"Marital status","ver married","Male","Psychological/emotional violence",18
+"Marital status","Currently has intimate partner","Male","Psychological/emotional violence",21
+"Marital status","Had intimate partner","Male","Psychological/emotional violence",12
+"Marital status","er married","Male","Psychological/emotional violence",19
+"Marital status","Married/living together","Male","Psychological/emotional violence",18
+"Marital status","Divorced/separated/widowed","Male","Psychological/emotional violence",26
+"Education","education","Male","Psychological/emotional violence",12
+"Education","imary","Male","Psychological/emotional violence",20
+"Education","condary","Male","Psychological/emotional violence",20
+"Education","re than secondary","Male","Psychological/emotional violence",18
+"Wealth quintile","west","Male","Psychological/emotional violence",17
+"Wealth quintile","cond","Male","Psychological/emotional violence",19
+"Wealth quintile","ddle","Male","Psychological/emotional violence",17
+"Wealth quintile","urth","Male","Psychological/emotional violence",23
+"Wealth quintile","ghest","Male","Psychological/emotional violence",18
+"Age","-19","Female","Physical violence",10
+"Age","-24","Female","Physical violence",16
+"Age","-29","Female","Physical violence",18
+"Age","-39","Female","Physical violence",18
+"Age","-49","Female","Physical violence",14
+"Residence","ban","Female","Physical violence",14
+"Residence","ral","Female","Physical violence",18
+"Marital status","ver married","Female","Physical violence",7
+"Marital status","Currently has intimate partner","Female","Physical violence",8
+"Marital status","Had intimate partner","Female","Physical violence",6
+"Marital status","er married","Female","Physical violence",18
+"Marital status","Married/living together","Female","Physical violence",18
+"Marital status","Divorced/separated/widowed","Female","Physical violence",19
+"Education","education","Female","Physical violence",17
+"Education","imary","Female","Physical violence",22
+"Education","condary","Female","Physical violence",15
+"Education","re than secondary","Female","Physical violence",6
+"Wealth quintile","west","Female","Physical violence",22
+"Wealth quintile","cond","Female","Physical violence",20
+"Wealth quintile","ddle","Female","Physical violence",18
+"Wealth quintile","urth","Female","Physical violence",14
+"Wealth quintile","ghest","Female","Physical violence",10
+"Age","-19","Male","Physical violence",6
+"Age","-24","Male","Physical violence",8
+"Age","-29","Male","Physical violence",5
+"Age","-39","Male","Physical violence",4
+"Age","-49","Male","Physical violence",4
+"Residence","ban","Male","Physical violence",6
+"Residence","ral","Male","Physical violence",5
+"Marital status","ver married","Male","Physical violence",6
+"Marital status","Currently has intimate partner","Male","Physical violence",7
+"Marital status","Had intimate partner","Male","Physical violence",4
+"Marital status","er married","Male","Physical violence",5
+"Marital status","Married/living together","Male","Physical violence",4
+"Marital status","Divorced/separated/widowed","Male","Physical violence",11
+"Education","education","Male","Physical violence",4
+"Education","imary","Male","Physical violence",6
+"Education","condary","Male","Physical violence",7
+"Education","re than secondary","Male","Physical violence",3
+"Wealth quintile","west","Male","Physical violence",5
+"Wealth quintile","cond","Male","Physical violence",6
+"Wealth quintile","ddle","Male","Physical violence",6
+"Wealth quintile","urth","Male","Physical violence",5
+"Wealth quintile","ghest","Male","Physical violence",5
+"Age","-19","Female","Sexual violence",6
+"Age","-24","Female","Sexual violence",6
+"Age","-29","Female","Sexual violence",8
+"Age","-39","Female","Sexual violence",8
+"Age","-49","Female","Sexual violence",7
+"Residence","ban","Female","Sexual violence",6
+"Residence","ral","Female","Sexual violence",8
+"Marital status","ver married","Female","Sexual violence",4
+"Marital status","Currently has intimate partner","Female","Sexual violence",4
+"Marital status","Had intimate partner","Female","Sexual violence",5
+"Marital status","er married","Female","Sexual violence",8
+"Marital status","Married/living together","Female","Sexual violence",8
+"Marital status","Divorced/separated/widowed","Female","Sexual violence",8
+"Education","education","Female","Sexual violence",5
+"Education","imary","Female","Sexual violence",9
+"Education","condary","Female","Sexual violence",7
+"Education","re than secondary","Female","Sexual violence",4
+"Wealth quintile","west","Female","Sexual violence",8
+"Wealth quintile","cond","Female","Sexual violence",9
+"Wealth quintile","ddle","Female","Sexual violence",8
+"Wealth quintile","urth","Female","Sexual violence",6
+"Wealth quintile","ghest","Female","Sexual violence",5
+"Age","-19","Male","Sexual violence",8
+"Age","-24","Male","Sexual violence",7
+"Age","-29","Male","Sexual violence",6
+"Age","-39","Male","Sexual violence",4
+"Age","-49","Male","Sexual violence",2
+"Residence","ban","Male","Sexual violence",6
+"Residence","ral","Male","Sexual violence",4
+"Marital status","ver married","Male","Sexual violence",5
+"Marital status","Currently has intimate partner","Male","Sexual violence",5
+"Marital status","Had intimate partner","Male","Sexual violence",6
+"Marital status","er married","Male","Sexual violence",4
+"Marital status","Married/living together","Male","Sexual violence",3
+"Marital status","Divorced/separated/widowed","Male","Sexual violence",8
+"Education","education","Male","Sexual violence",2
+"Education","imary","Male","Sexual violence",5
+"Education","condary","Male","Sexual violence",6
+"Education","re than secondary","Male","Sexual violence",3
+"Wealth quintile","west","Male","Sexual violence",5
+"Wealth quintile","cond","Male","Sexual violence",4
+"Wealth quintile","ddle","Male","Sexual violence",5
+"Wealth quintile","urth","Male","Sexual violence",5
+"Wealth quintile","ghest","Male","Sexual violence",4
+"Age","-19","Female","Economic violence",3
+"Age","-24","Female","Economic violence",7
+"Age","-29","Female","Economic violence",8
+"Age","-39","Female","Economic violence",8
+"Age","-49","Female","Economic violence",8
+"Residence","ban","Female","Economic violence",7
+"Residence","ral","Female","Economic violence",8
+"Marital status","ver married","Female","Economic violence",3
+"Marital status","Currently has intimate partner","Female","Economic violence",2
+"Marital status","Had intimate partner","Female","Economic violence",3
+"Marital status","er married","Female","Economic violence",9
+"Marital status","Married/living together","Female","Economic violence",9
+"Marital status","Divorced/separated/widowed","Female","Economic violence",8
+"Education","education","Female","Economic violence",6
+"Education","imary","Female","Economic violence",10
+"Education","condary","Female","Economic violence",8
+"Education","re than secondary","Female","Economic violence",4
+"Wealth quintile","west","Female","Economic violence",8
+"Wealth quintile","cond","Female","Economic violence",8
+"Wealth quintile","ddle","Female","Economic violence",9
+"Wealth quintile","urth","Female","Economic violence",8
+"Wealth quintile","ghest","Female","Economic violence",5
+"Age","-19","Male","Economic violence",9
+"Age","-24","Male","Economic violence",6
+"Age","-29","Male","Economic violence",8
+"Age","-39","Male","Economic violence",7
+"Age","-49","Male","Economic violence",8
+"Residence","ban","Male","Economic violence",8
+"Residence","ral","Male","Economic violence",8
+"Marital status","ver married","Male","Economic violence",7
+"Marital status","Currently has intimate partner","Male","Economic violence",8
+"Marital status","Had intimate partner","Male","Economic violence",5
+"Marital status","er married","Male","Economic violence",8
+"Marital status","Married/living together","Male","Economic violence",8
+"Marital status","Divorced/separated/widowed","Male","Economic violence",7
+"Education","education","Male","Economic violence",7
+"Education","imary","Male","Economic violence",8
+"Education","condary","Male","Economic violence",9
+"Education","re than secondary","Male","Economic violence",6
+"Wealth quintile","west","Male","Economic violence",8
+"Wealth quintile","cond","Male","Economic violence",7
+"Wealth quintile","ddle","Male","Economic violence",8
+"Wealth quintile","urth","Male","Economic violence",9
+"Wealth quintile","ghest","Male","Economic violence",6
+"Age","-19","Female","Physical and sexual",2
+"Age","-24","Female","Physical and sexual",4
+"Age","-29","Female","Physical and sexual",5
+"Age","-39","Female","Physical and sexual",5
+"Age","-49","Female","Physical and sexual",4
+"Residence","ban","Female","Physical and sexual",4
+"Residence","ral","Female","Physical and sexual",5
+"Marital status","ver married","Female","Physical and sexual",1
+"Marital status","Currently has intimate partner","Female","Physical and sexual",1
+"Marital status","Had intimate partner","Female","Physical and sexual",1
+"Marital status","er married","Female","Physical and sexual",5
+"Marital status","Married/living together","Female","Physical and sexual",5
+"Marital status","Divorced/separated/widowed","Female","Physical and sexual",7
+"Education","education","Female","Physical and sexual",3
+"Education","imary","Female","Physical and sexual",6
+"Education","condary","Female","Physical and sexual",4
+"Education","re than secondary","Female","Physical and sexual",1
+"Wealth quintile","west","Female","Physical and sexual",6
+"Wealth quintile","cond","Female","Physical and sexual",6
+"Wealth quintile","ddle","Female","Physical and sexual",4
+"Wealth quintile","urth","Female","Physical and sexual",4
+"Wealth quintile","ghest","Female","Physical and sexual",3
+"Age","-19","Male","Physical and sexual",3
+"Age","-24","Male","Physical and sexual",3
+"Age","-29","Male","Physical and sexual",2
+"Age","-39","Male","Physical and sexual",2
+"Age","-49","Male","Physical and sexual",0
+"Residence","ban","Male","Physical and sexual",3
+"Residence","ral","Male","Physical and sexual",1
+"Marital status","ver married","Male","Physical and sexual",2
+"Marital status","Currently has intimate partner","Male","Physical and sexual",1
+"Marital status","Had intimate partner","Male","Physical and sexual",3
+"Marital status","er married","Male","Physical and sexual",1
+"Marital status","Married/living together","Male","Physical and sexual",1
+"Marital status","Divorced/separated/widowed","Male","Physical and sexual",5
+"Education","education","Male","Physical and sexual",2
+"Education","imary","Male","Physical and sexual",1
+"Education","condary","Male","Physical and sexual",2
+"Education","re than secondary","Male","Physical and sexual",1
+"Wealth quintile","west","Male","Physical and sexual",0.5
+"Wealth quintile","cond","Male","Physical and sexual",2
+"Wealth quintile","ddle","Male","Physical and sexual",2
+"Wealth quintile","urth","Male","Physical and sexual",2
+"Wealth quintile","ghest","Male","Physical and sexual",1
+"Age","-19","Female","Physical and sexual and psychological/emotional",2
+"Age","-24","Female","Physical and sexual and psychological/emotional",3
+"Age","-29","Female","Physical and sexual and psychological/emotional",4
+"Age","-39","Female","Physical and sexual and psychological/emotional",4
+"Age","-49","Female","Physical and sexual and psychological/emotional",3
+"Residence","ban","Female","Physical and sexual and psychological/emotional",3
+"Residence","ral","Female","Physical and sexual and psychological/emotional",4
+"Marital status","ver married","Female","Physical and sexual and psychological/emotional",1
+"Marital status","Currently has intimate partner","Female","Physical and sexual and psychological/emotional",1
+"Marital status","Had intimate partner","Female","Physical and sexual and psychological/emotional",1
+"Marital status","er married","Female","Physical and sexual and psychological/emotional",4
+"Marital status","Married/living together","Female","Physical and sexual and psychological/emotional",4
+"Marital status","Divorced/separated/widowed","Female","Physical and sexual and psychological/emotional",6
+"Education","education","Female","Physical and sexual and psychological/emotional",3
+"Education","imary","Female","Physical and sexual and psychological/emotional",5
+"Education","condary","Female","Physical and sexual and psychological/emotional",4
+"Education","re than secondary","Female","Physical and sexual and psychological/emotional",1
+"Wealth quintile","west","Female","Physical and sexual and psychological/emotional",5
+"Wealth quintile","cond","Female","Physical and sexual and psychological/emotional",5
+"Wealth quintile","ddle","Female","Physical and sexual and psychological/emotional",4
+"Wealth quintile","urth","Female","Physical and sexual and psychological/emotional",3
+"Wealth quintile","ghest","Female","Physical and sexual and psychological/emotional",2
+"Age","-19","Male","Physical and sexual and psychological/emotional",1
+"Age","-24","Male","Physical and sexual and psychological/emotional",3
+"Age","-29","Male","Physical and sexual and psychological/emotional",2
+"Age","-39","Male","Physical and sexual and psychological/emotional",1
+"Age","-49","Male","Physical and sexual and psychological/emotional",0
+"Residence","ban","Male","Physical and sexual and psychological/emotional",2
+"Residence","ral","Male","Physical and sexual and psychological/emotional",1
+"Marital status","ver married","Male","Physical and sexual and psychological/emotional",1
+"Marital status","Currently has intimate partner","Male","Physical and sexual and psychological/emotional",0.3
+"Marital status","Had intimate partner","Male","Physical and sexual and psychological/emotional",3
+"Marital status","er married","Male","Physical and sexual and psychological/emotional",1
+"Marital status","Married/living together","Male","Physical and sexual and psychological/emotional",1
+"Marital status","Divorced/separated/widowed","Male","Physical and sexual and psychological/emotional",5
+"Education","education","Male","Physical and sexual and psychological/emotional",1
+"Education","imary","Male","Physical and sexual and psychological/emotional",1
+"Education","condary","Male","Physical and sexual and psychological/emotional",2
+"Education","re than secondary","Male","Physical and sexual and psychological/emotional",1
+"Wealth quintile","west","Male","Physical and sexual and psychological/emotional",0.4
+"Wealth quintile","cond","Male","Physical and sexual and psychological/emotional",1
+"Wealth quintile","ddle","Male","Physical and sexual and psychological/emotional",2
+"Wealth quintile","urth","Male","Physical and sexual and psychological/emotional",2
+"Wealth quintile","ghest","Male","Physical and sexual and psychological/emotional",1
+"Age","-19","Female","Physical and sexual and psychological/emotional and economic",1
+"Age","-24","Female","Physical and sexual and psychological/emotional and economic",1
+"Age","-29","Female","Physical and sexual and psychological/emotional and economic",2
+"Age","-39","Female","Physical and sexual and psychological/emotional and economic",2
+"Age","-49","Female","Physical and sexual and psychological/emotional and economic",2
+"Residence","ban","Female","Physical and sexual and psychological/emotional and economic",2
+"Residence","ral","Female","Physical and sexual and psychological/emotional and economic",2
+"Marital status","ver married","Female","Physical and sexual and psychological/emotional and economic",0.3
+"Marital status","Currently has intimate partner","Female","Physical and sexual and psychological/emotional and economic",0.1
+"Marital status","Had intimate partner","Female","Physical and sexual and psychological/emotional and economic",1
+"Marital status","er married","Female","Physical and sexual and psychological/emotional and economic",2
+"Marital status","Married/living together","Female","Physical and sexual and psychological/emotional and economic",2
+"Marital status","Divorced/separated/widowed","Female","Physical and sexual and psychological/emotional and economic",3
+"Education","education","Female","Physical and sexual and psychological/emotional and economic",1
+"Education","imary","Female","Physical and sexual and psychological/emotional and economic",3
+"Education","condary","Female","Physical and sexual and psychological/emotional and economic",2
+"Education","re than secondary","Female","Physical and sexual and psychological/emotional and economic",0.5
+"Wealth quintile","west","Female","Physical and sexual and psychological/emotional and economic",3
+"Wealth quintile","cond","Female","Physical and sexual and psychological/emotional and economic",2
+"Wealth quintile","ddle","Female","Physical and sexual and psychological/emotional and economic",2
+"Wealth quintile","urth","Female","Physical and sexual and psychological/emotional and economic",2
+"Wealth quintile","ghest","Female","Physical and sexual and psychological/emotional and economic",1
+"Age","-19","Male","Physical and sexual and psychological/emotional and economic",0
+"Age","-24","Male","Physical and sexual and psychological/emotional and economic",0.2
+"Age","-29","Male","Physical and sexual and psychological/emotional and economic",0
+"Age","-39","Male","Physical and sexual and psychological/emotional and economic",0.1
+"Age","-49","Male","Physical and sexual and psychological/emotional and economic",0
+"Residence","ban","Male","Physical and sexual and psychological/emotional and economic",0
+"Residence","ral","Male","Physical and sexual and psychological/emotional and economic",0.1
+"Marital status","ver married","Male","Physical and sexual and psychological/emotional and economic",0
+"Marital status","Currently has intimate partner","Male","Physical and sexual and psychological/emotional and economic",0
+"Marital status","Had intimate partner","Male","Physical and sexual and psychological/emotional and economic",0
+"Marital status","er married","Male","Physical and sexual and psychological/emotional and economic",0.1
+"Marital status","Married/living together","Male","Physical and sexual and psychological/emotional and economic",0
+"Marital status","Divorced/separated/widowed","Male","Physical and sexual and psychological/emotional and economic",0.5
+"Education","education","Male","Physical and sexual and psychological/emotional and economic",0
+"Education","imary","Male","Physical and sexual and psychological/emotional and economic",0.2
+"Education","condary","Male","Physical and sexual and psychological/emotional and economic",0
+"Education","re than secondary","Male","Physical and sexual and psychological/emotional and economic",0
+"Wealth quintile","west","Male","Physical and sexual and psychological/emotional and economic",0
+"Wealth quintile","cond","Male","Physical and sexual and psychological/emotional and economic",0.2
+"Wealth quintile","ddle","Male","Physical and sexual and psychological/emotional and economic",0
+"Wealth quintile","urth","Male","Physical and sexual and psychological/emotional and economic",0.1
+"Wealth quintile","ghest","Male","Physical and sexual and psychological/emotional and economic",0
+"Age","-19","Female","Physical or sexual",14
+"Age","-24","Female","Physical or sexual",19
+"Age","-29","Female","Physical or sexual",21
+"Age","-39","Female","Physical or sexual",21
+"Age","-49","Female","Physical or sexual",17
+"Residence","ban","Female","Physical or sexual",16
+"Residence","ral","Female","Physical or sexual",21
+"Marital status","ver married","Female","Physical or sexual",10
+"Marital status","Currently has intimate partner","Female","Physical or sexual",10
+"Marital status","Had intimate partner","Female","Physical or sexual",10
+"Marital status","er married","Female","Physical or sexual",21
+"Marital status","Married/living together","Female","Physical or sexual",22
+"Marital status","Divorced/separated/widowed","Female","Physical or sexual",20
+"Education","education","Female","Physical or sexual",19
+"Education","imary","Female","Physical or sexual",25
+"Education","condary","Female","Physical or sexual",18
+"Education","re than secondary","Female","Physical or sexual",9
+"Wealth quintile","west","Female","Physical or sexual",25
+"Wealth quintile","cond","Female","Physical or sexual",23
+"Wealth quintile","ddle","Female","Physical or sexual",21
+"Wealth quintile","urth","Female","Physical or sexual",16
+"Wealth quintile","ghest","Female","Physical or sexual",12
+"Age","-19","Male","Physical or sexual",11
+"Age","-24","Male","Physical or sexual",12
+"Age","-29","Male","Physical or sexual",9
+"Age","-39","Male","Physical or sexual",6
+"Age","-49","Male","Physical or sexual",7
+"Residence","ban","Male","Physical or sexual",10
+"Residence","ral","Male","Physical or sexual",8
+"Marital status","ver married","Male","Physical or sexual",10
+"Marital status","Currently has intimate partner","Male","Physical or sexual",10
+"Marital status","Had intimate partner","Male","Physical or sexual",8
+"Marital status","er married","Male","Physical or sexual",8
+"Marital status","Married/living together","Male","Physical or sexual",7
+"Marital status","Divorced/separated/widowed","Male","Physical or sexual",14
+"Education","education","Male","Physical or sexual",4
+"Education","imary","Male","Physical or sexual",9
+"Education","condary","Male","Physical or sexual",10
+"Education","re than secondary","Male","Physical or sexual",5
+"Wealth quintile","west","Male","Physical or sexual",9
+"Wealth quintile","cond","Male","Physical or sexual",9
+"Wealth quintile","ddle","Male","Physical or sexual",9
+"Wealth quintile","urth","Male","Physical or sexual",8
+"Wealth quintile","ghest","Male","Physical or sexual",8
+"Age","-19","Female","Physical or sexual or psychological/emotional",21
+"Age","-24","Female","Physical or sexual or psychological/emotional",27
+"Age","-29","Female","Physical or sexual or psychological/emotional",30
+"Age","-39","Female","Physical or sexual or psychological/emotional",30
+"Age","-49","Female","Physical or sexual or psychological/emotional",27
+"Residence","ban","Female","Physical or sexual or psychological/emotional",24
+"Residence","ral","Female","Physical or sexual or psychological/emotional",31
+"Marital status","ver married","Female","Physical or sexual or psychological/emotional",16
+"Marital status","Currently has intimate partner","Female","Physical or sexual or psychological/emotional",17
+"Marital status","Had intimate partner","Female","Physical or sexual or psychological/emotional",15
+"Marital status","er married","Female","Physical or sexual or psychological/emotional",31
+"Marital status","Married/living together","Female","Physical or sexual or psychological/emotional",32
+"Marital status","Divorced/separated/widowed","Female","Physical or sexual or psychological/emotional",26
+"Education","education","Female","Physical or sexual or psychological/emotional",27
+"Education","imary","Female","Physical or sexual or psychological/emotional",35
+"Education","condary","Female","Physical or sexual or psychological/emotional",27
+"Education","re than secondary","Female","Physical or sexual or psychological/emotional",18
+"Wealth quintile","west","Female","Physical or sexual or psychological/emotional",33
+"Wealth quintile","cond","Female","Physical or sexual or psychological/emotional",33
+"Wealth quintile","ddle","Female","Physical or sexual or psychological/emotional",31
+"Wealth quintile","urth","Female","Physical or sexual or psychological/emotional",27
+"Wealth quintile","ghest","Female","Physical or sexual or psychological/emotional",21
+"Age","-19","Male","Physical or sexual or psychological/emotional",22
+"Age","-24","Male","Physical or sexual or psychological/emotional",29
+"Age","-29","Male","Physical or sexual or psychological/emotional",25
+"Age","-39","Male","Physical or sexual or psychological/emotional",21
+"Age","-49","Male","Physical or sexual or psychological/emotional",18
+"Residence","ban","Male","Physical or sexual or psychological/emotional",27
+"Residence","ral","Male","Physical or sexual or psychological/emotional",20
+"Marital status","ver married","Male","Physical or sexual or psychological/emotional",23
+"Marital status","Currently has intimate partner","Male","Physical or sexual or psychological/emotional",27
+"Marital status","Had intimate partner","Male","Physical or sexual or psychological/emotional",16
+"Marital status","er married","Male","Physical or sexual or psychological/emotional",21
+"Marital status","Married/living together","Male","Physical or sexual or psychological/emotional",20
+"Marital status","Divorced/separated/widowed","Male","Physical or sexual or psychological/emotional",28
+"Education","education","Male","Physical or sexual or psychological/emotional",13
+"Education","imary","Male","Physical or sexual or psychological/emotional",22
+"Education","condary","Male","Physical or sexual or psychological/emotional",25
+"Education","re than secondary","Male","Physical or sexual or psychological/emotional",20
+"Wealth quintile","west","Male","Physical or sexual or psychological/emotional",21
+"Wealth quintile","cond","Male","Physical or sexual or psychological/emotional",22
+"Wealth quintile","ddle","Male","Physical or sexual or psychological/emotional",21
+"Wealth quintile","urth","Male","Physical or sexual or psychological/emotional",25
+"Wealth quintile","ghest","Male","Physical or sexual or psychological/emotional",23
+"Age","-19","Female","Physical or sexual or psychological/emotional or economic",22
+"Age","-24","Female","Physical or sexual or psychological/emotional or economic",30
+"Age","-29","Female","Physical or sexual or psychological/emotional or economic",34
+"Age","-39","Female","Physical or sexual or psychological/emotional or economic",35
+"Age","-49","Female","Physical or sexual or psychological/emotional or economic",34
+"Residence","ban","Female","Physical or sexual or psychological/emotional or economic",29
+"Residence","ral","Female","Physical or sexual or psychological/emotional or economic",35
+"Marital status","ver married","Female","Physical or sexual or psychological/emotional or economic",18
+"Marital status","Currently has intimate partner","Female","Physical or sexual or psychological/emotional or economic",19
+"Marital status","Had intimate partner","Female","Physical or sexual or psychological/emotional or economic",17
+"Marital status","er married","Female","Physical or sexual or psychological/emotional or economic",36
+"Marital status","Married/living together","Female","Physical or sexual or psychological/emotional or economic",35
+"Marital status","Divorced/separated/widowed","Female","Physical or sexual or psychological/emotional or economic",44
+"Education","education","Female","Physical or sexual or psychological/emotional or economic",29
+"Education","imary","Female","Physical or sexual or psychological/emotional or economic",39
+"Education","condary","Female","Physical or sexual or psychological/emotional or economic",32
+"Education","re than secondary","Female","Physical or sexual or psychological/emotional or economic",22
+"Wealth quintile","west","Female","Physical or sexual or psychological/emotional or economic",36
+"Wealth quintile","cond","Female","Physical or sexual or psychological/emotional or economic",37
+"Wealth quintile","ddle","Female","Physical or sexual or psychological/emotional or economic",35
+"Wealth quintile","urth","Female","Physical or sexual or psychological/emotional or economic",32
+"Wealth quintile","ghest","Female","Physical or sexual or psychological/emotional or economic",25
+"Age","-19","Male","Physical or sexual or psychological/emotional or economic",32
+"Age","-24","Male","Physical or sexual or psychological/emotional or economic",34
+"Age","-29","Male","Physical or sexual or psychological/emotional or economic",33
+"Age","-39","Male","Physical or sexual or psychological/emotional or economic",30
+"Age","-49","Male","Physical or sexual or psychological/emotional or economic",28
+"Residence","ban","Male","Physical or sexual or psychological/emotional or economic",35
+"Residence","ral","Male","Physical or sexual or psychological/emotional or economic",28
+"Marital status","ver married","Male","Physical or sexual or psychological/emotional or economic",31
+"Marital status","Currently has intimate partner","Male","Physical or sexual or psychological/emotional or economic",34
+"Marital status","Had intimate partner","Male","Physical or sexual or psychological/emotional or economic",23
+"Marital status","er married","Male","Physical or sexual or psychological/emotional or economic",30
+"Marital status","Married/living together","Male","Physical or sexual or psychological/emotional or economic",30
+"Marital status","Divorced/separated/widowed","Male","Physical or sexual or psychological/emotional or economic",34
+"Education","education","Male","Physical or sexual or psychological/emotional or economic",22
+"Education","imary","Male","Physical or sexual or psychological/emotional or economic",30
+"Education","condary","Male","Physical or sexual or psychological/emotional or economic",34
+"Education","re than secondary","Male","Physical or sexual or psychological/emotional or economic",28
+"Wealth quintile","west","Male","Physical or sexual or psychological/emotional or economic",29
+"Wealth quintile","cond","Male","Physical or sexual or psychological/emotional or economic",29
+"Wealth quintile","ddle","Male","Physical or sexual or psychological/emotional or economic",29
+"Wealth quintile","urth","Male","Physical or sexual or psychological/emotional or economic",34
+"Wealth quintile","ghest","Male","Physical or sexual or psychological/emotional or economic",31

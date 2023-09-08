@@ -1,0 +1,71 @@
+"Age","Gender","variable","value"
+"15-19","Female","% employed (last 12 months)",32
+"20-24","Female","% employed (last 12 months)",52
+"25-29","Female","% employed (last 12 months)",65
+"30-34","Female","% employed (last 12 months)",69
+"35-39","Female","% employed (last 12 months)",75
+"40-44","Female","% employed (last 12 months)",77
+"45-49","Female","% employed (last 12 months)",74
+"15-19","Male","% employed (last 12 months)",NA
+"20-24","Male","% employed (last 12 months)",95
+"25-29","Male","% employed (last 12 months)",98
+"30-34","Male","% employed (last 12 months)",98
+"35-39","Male","% employed (last 12 months)",98
+"40-44","Male","% employed (last 12 months)",98
+"45-49","Male","% employed (last 12 months)",98
+"15-19","Female","Cash only",72
+"20-24","Female","Cash only",80
+"25-29","Female","Cash only",80
+"30-34","Female","Cash only",78
+"35-39","Female","Cash only",76
+"40-44","Female","Cash only",71
+"45-49","Female","Cash only",70
+"15-19","Male","Cash only",NA
+"20-24","Male","Cash only",94
+"25-29","Male","Cash only",94
+"30-34","Male","Cash only",94
+"35-39","Male","Cash only",93
+"40-44","Male","Cash only",92
+"45-49","Male","Cash only",92
+"15-19","Female","Cash and in-kind",4
+"20-24","Female","Cash and in-kind",3
+"25-29","Female","Cash and in-kind",3
+"30-34","Female","Cash and in-kind",4
+"35-39","Female","Cash and in-kind",4
+"40-44","Female","Cash and in-kind",6
+"45-49","Female","Cash and in-kind",7
+"15-19","Male","Cash and in-kind",NA
+"20-24","Male","Cash and in-kind",3
+"25-29","Male","Cash and in-kind",2
+"30-34","Male","Cash and in-kind",2
+"35-39","Male","Cash and in-kind",3
+"40-44","Male","Cash and in-kind",4
+"45-49","Male","Cash and in-kind",3
+"15-19","Female","In-kind only",0
+"20-24","Female","In-kind only",0.4
+"25-29","Female","In-kind only",0.3
+"30-34","Female","In-kind only",0.3
+"35-39","Female","In-kind only",1
+"40-44","Female","In-kind only",1
+"45-49","Female","In-kind only",0.5
+"15-19","Male","In-kind only",NA
+"20-24","Male","In-kind only",0.2
+"25-29","Male","In-kind only",0
+"30-34","Male","In-kind only",0
+"35-39","Male","In-kind only",0.1
+"40-44","Male","In-kind only",0.3
+"45-49","Male","In-kind only",0.2
+"15-19","Female","Not paid",24
+"20-24","Female","Not paid",16
+"25-29","Female","Not paid",16
+"30-34","Female","Not paid",18
+"35-39","Female","Not paid",19
+"40-44","Female","Not paid",22
+"45-49","Female","Not paid",23
+"15-19","Male","Not paid",NA
+"20-24","Male","Not paid",3
+"25-29","Male","Not paid",3
+"30-34","Male","Not paid",4
+"35-39","Male","Not paid",4
+"40-44","Male","Not paid",4
+"45-49","Male","Not paid",4

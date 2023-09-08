@@ -1,0 +1,49 @@
+Value,Reason,Proportion,Background characteristics
+Urban,Too hot,9,Residence
+Urban,User didn't sleep in household,13,Residence
+Urban,No mosquitoes/malaria,15,Residence
+Urban,Extra net/saving for later,49,Residence
+Rural,Too hot,3,Residence
+Rural,User didn't sleep in household,12,Residence
+Rural,No mosquitoes/malaria,9,Residence
+Rural,Extra net/saving for later,63,Residence
+Highland epidemic prone,Too hot,2,Endemicity zone
+Highland epidemic prone,User didn't sleep in household,11,Endemicity zone
+Highland epidemic prone,No mosquitoes/malaria,8,Endemicity zone
+Highland epidemic prone,Extra net/saving for later,68,Endemicity zone
+Lake endemic,Too hot,2,Endemicity zone
+Lake endemic,User didn't sleep in household,10,Endemicity zone
+Lake endemic,No mosquitoes/malaria,2,Endemicity zone
+Lake endemic,Extra net/saving for later,72,Endemicity zone
+Coast endemic,Too hot,13,Endemicity zone
+Coast endemic,User didn't sleep in household,16,Endemicity zone
+Coast endemic,No mosquitoes/malaria,5,Endemicity zone
+Coast endemic,Extra net/saving for later,57,Endemicity zone
+Seasonal,Too hot,15,Endemicity zone
+Seasonal,User didn't sleep in household,12,Endemicity zone
+Seasonal,No mosquitoes/malaria,23,Endemicity zone
+Seasonal,Extra net/saving for later,30,Endemicity zone
+Low risk,Too hot,8,Endemicity zone
+Low risk,User didn't sleep in household,17,Endemicity zone
+Low risk,No mosquitoes/malaria,29,Endemicity zone
+Low risk,Extra net/saving for later,29,Endemicity zone
+Lowest,Too hot,5,Wealth quintile
+Lowest,User didn't sleep in household,6,Wealth quintile
+Lowest,No mosquitoes/malaria,11,Wealth quintile
+Lowest,Extra net/saving for later,60,Wealth quintile
+Second,Too hot,2,Wealth quintile
+Second,User didn't sleep in household,8,Wealth quintile
+Second,No mosquitoes/malaria,6,Wealth quintile
+Second,Extra net/saving for later,68,Wealth quintile
+Middle,Too hot,4,Wealth quintile
+Middle,User didn't sleep in household,14,Wealth quintile
+Middle,No mosquitoes/malaria,8,Wealth quintile
+Middle,Extra net/saving for later,62,Wealth quintile
+Fourth,Too hot,4,Wealth quintile
+Fourth,User didn't sleep in household,16,Wealth quintile
+Fourth,No mosquitoes/malaria,11,Wealth quintile
+Fourth,Extra net/saving for later,57,Wealth quintile
+Highest,Too hot,8,Wealth quintile
+Highest,User didn't sleep in household,16,Wealth quintile
+Highest,No mosquitoes/malaria,18,Wealth quintile
+Highest,Extra net/saving for later,46,Wealth quintile
