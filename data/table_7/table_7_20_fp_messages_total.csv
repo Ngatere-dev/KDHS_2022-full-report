@@ -1,20 +1,20 @@
-Value,Category,Proportion,Participants
-Total,Radio,59.0,Women
-Total,Television,49.5,Women
-Total,Newspaper/magazine,20.2,Women
-Total,Mobile phone,13.9,Women
-Total,Social media,32.2,Women
-Total,Poster/leaflet/brochure,40.5,Women
-Total,Outdoor sign/billboard,35.1,Women
-Total,Community meeting/events,45.1,Women
-Total,Friends/peers,80.9,Women
-Total,Internet,30.5,Women
-Total 15-54,Radio,69.0,Men
-Total 15-54,Television,55.2,Men
-Total 15-54,Newspaper/magazine,28.6,Men
-Total 15-54,Mobile phone,14.8,Men
-Total 15-54,Social media,39.3,Men
-Total 15-54,Poster/leaflet/brochure,45.7,Men
-Total 15-54,Outdoor sign/billboard,42.2,Men
-Total 15-54,Friends/peers,66.0,Men
-Total 15-54,Internet,37.8,Men
+"Value","Category","Proportion","Participants"
+"Total","Radio",59,"Women"
+"Total","Television",50,"Women"
+"Total","Newspaper/magazine",20,"Women"
+"Total","Mobile phone",14,"Women"
+"Total","Social media",32,"Women"
+"Total","Poster/leaflet/brochure",40,"Women"
+"Total","Outdoor sign/billboard",35,"Women"
+"Total","Community meeting/events",45,"Women"
+"Total","Friends/peers",81,"Women"
+"Total","Internet",30,"Women"
+"Total 15-54","Radio",69,"Men"
+"Total 15-54","Television",55,"Men"
+"Total 15-54","Newspaper/magazine",29,"Men"
+"Total 15-54","Mobile phone",15,"Men"
+"Total 15-54","Social media",39,"Men"
+"Total 15-54","Poster/leaflet/brochure",46,"Men"
+"Total 15-54","Outdoor sign/billboard",42,"Men"
+"Total 15-54","Friends/peers",66,"Men"
+"Total 15-54","Internet",38,"Men"
