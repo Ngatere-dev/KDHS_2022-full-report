@@ -62,7 +62,7 @@ knitr::include_graphics("www/front_page_knbs.png")
 #setwd("~/")
 # load all the required packages
 library(pacman)
-p_load(shiny,flexdashboard, tidyverse,ggiraph, scales, sf, reshape2, cowplot, data.table, classInt)
+p_load(shiny,flexdashboard, tidyverse,ggiraph, scales, sf, reshape2, cowplot, data.table, classInt,rmapshaper)
 ```
 
 # Sample survey
@@ -214,7 +214,8 @@ selectInput("health", "",
 
 insurance_county <- fread("data/table_2/table_2_20C_insurance_by_county.csv") 
 
-county <- st_read("shapefiles/County.shp")
+county <- st_read("shapefiles/County.shp") |> ms_simplify(keep = 0.001)
+
 insurance_county1 <- full_join(county, insurance_county, by=c("Name"="County"))
 
 ```
@@ -681,6 +682,7 @@ selectInput("cash_transfer", "",
                 "By County"="County"))
 ```
 
+
 ```{r, include=F}
 
 cash_transfer_county <- fread("data/table_2/table_2_22_2C_cash_transfer_by_county.csv")
@@ -697,6 +699,7 @@ cash_transfer_county1$cat <- fct_relevel(cash_transfer_county1$cat, "<0.7", "0.7
 
 
 ```
+
 
 ```{r}
 cash_transfer <- fread("data/table_2/table_2_22_1_cash_transfer_by_provider.csv") 
@@ -803,10 +806,15 @@ respondentsdata$Grouping<- fct_relevel(respondentsdata$Grouping,
 
 ### men
 men_background_xtics_county <- fread("data/table_2/table2C_men_backgroundxtics_by_county.csv") 
+
+
+women_background_xtics_county <- fread("data/table_2/table2C_women_backgroundxtics_by_county.csv")
 # |>
 #   mutate(group="Men") |>
 #   mutate(cat=fifelse(weighted_perc<0.8, "<0.8", fifelse(weighted_perc>0.7 & weighted_perc<1.3, "0.8-1.2", fifelse(weighted_perc>1.2 & weighted_perc <2.1, "1.3-2.0",
 #                                                                                                 fifelse(weighted_perc>2.0&weighted_perc<2.9, "2.1-2.8", ">2.8")))))
+
+background_characteristics_map <- rbind(women_background_xtics_county, men_background_xtics_county)
 
 
 
@@ -815,21 +823,23 @@ county_updated <- st_read("shapefiles/County.shp")|>
  "Busia","Kakamega","Vihiga"),"Western", fifelse(Name%in%c("Kisumu", "Siaya","Homa Bay","Kisii", "Migori","Nyamira"),"Nyanza", fifelse(Name%in%"Nairobi","Nairobi", "Rift Valley"))))))))|>
   rename(County=Name)
 
-men_background_xtics_county1 <- full_join(county_updated, men_background_xtics_county, by="County")|>
+
+
+background_characteristics_map <- full_join(county_updated, background_characteristics_map, by="County")|>
   mutate(names=paste0(County,", ", weighted_perc,"%"))
 
 ### women
-women_background_xtics_county <- fread("data/table_2/table2C_women_backgroundxtics_by_county.csv")
+
 # |>
 #   mutate(group="Women") |>
 #   mutate(cat=fifelse(weighted_perc<0.8, "<0.8", fifelse(weighted_perc>0.7 & weighted_perc<1.3, "0.8-1.2", fifelse(weighted_perc>1.2 & weighted_perc <2.1, "1.3-2.0",
 #                                                                                                 fifelse(weighted_perc>2.0&weighted_perc<2.9, "2.1-2.8", ">2.8")))))
 
 
-women_background_xtics_county1 <- full_join(county_updated, women_background_xtics_county, by="County")|>
-  mutate(names=paste0(County,", ", weighted_perc,"%"))
+#women_background_xtics_county1 <- full_join(county_updated, women_background_xtics_county, by="County")|>
+# mutate(names=paste0(County,", ", weighted_perc,"%"))
 
-background_characteristics_map <- rbind(women_background_xtics_county1, men_background_xtics_county1)
+#background_characteristics_map <- rbind(women_background_xtics_county1, men_background_xtics_county1)
 
 breaks<- classIntervals(background_characteristics_map$weighted_perc, n=5, style="quantile", na.rm=T)
 
@@ -1553,10 +1563,10 @@ selectInput("marriage", "",
              ))
 
 renderGirafe({
-  marriage_data1a <-marriage_data1 |>filter(type%in%input$marriage) |>
-    filter(!(category%in%c("Women (20-49 yrs)", "Men (25-54 yrs)")))
+  #marriage_data1a <-
 
-  marriage_data_map<- ggplot(marriage_data1a, aes(fill=cat)) + 
+  marriage_data_map<- ggplot(marriage_data1 |>filter(type%in%input$marriage) |> filter(!(category%in%c("Women (20-49 yrs)", "Men (25-54 yrs)"))), 
+                             aes(fill=cat)) + 
     geom_sf_interactive(aes(tooltip=paste0(Name, " ",Value,"%")))+
     facet_grid(~category)+
   theme_void() +
@@ -1569,7 +1579,7 @@ renderGirafe({
                      opts_hover(css = "fill:#666666;cursor:pointer;"),
                      opts_selection(css = "fill:orange;", type = "multiple"),
                      opts_zoom(max = 9)),width=15, height=5)
-  print( marriage_map2, justify="right")
+  print(marriage_map2, justify="right")
 }) %>% bindCache(input$marriage)
 ```
 
@@ -2137,7 +2147,8 @@ renderPlot({
   labs( y="Wanted Fertility Rate", title="", x="", fill="")+
   geom_text(aes(label=paste0(Wanted.fertility.rates)), vjust=-0.2)+
   theme(text=element_text(size=18, face="bold"))
-}, width=1200, height=800)
+}, width=1200, height=800) %>%
+  bindCache(input$fertility_rates)
 
 ```
 
@@ -2517,7 +2528,8 @@ renderPlot({
     geom_text(aes(label=paste0(round(proportion))), hjust=-0.3, color="black")+
     labs(x="County", y="Rate per 1,000 live births",fill="Rate per 1,000 live births")+
     theme(text=element_text(size=15, face="bold")) +ylim(0,100)
-},width = 1200, height=650)
+},width = 1200, height=650) %>% bindCache(input$early_childhood_mortality_county2)
+
 ```
 
 ### **Perinatal mortality**
@@ -2765,7 +2777,7 @@ renderPlot({ggplot(place_delivery[place_delivery$Variable%in%input$place_deliver
   theme_bw()+scale_fill_brewer(palette = "Set1")+
     geom_text(aes(label=paste0(proportion)), position = position_dodge(width=1),vjust=-0.2)+
   labs( y="Percent (%)", title="", x="", fill="Place of delivery")+ylim(0,100)+
-  theme(text=element_text(size=16, face="bold"))}, width=1400, height=650 )
+  theme(text=element_text(size=16, face="bold"))}, width=1400, height=650 ) %>% bindCache(input$place_delivery)
 
 
 ```
@@ -5443,7 +5455,7 @@ renderPlot({ggplot(house_land_ownsership[house_land_ownsership$`Background chara
   scale_fill_brewer(palette = "Set1")+
   theme_bw()+
   labs(x ='Proportion (%)', y ="", fill="")+
-  theme(text = element_text(size=16, face="bold"))}, width=1500, height=800)
+  theme(text = element_text(size=16, face="bold"))}, width=1500, height=800)  %>% bindCache(input$home_own)
 
 ```
 
@@ -5907,7 +5919,7 @@ renderPlot({ggplot(pers_physical_violence[pers_physical_violence$Gender%in%input
   geom_col(position="dodge") + geom_text(aes(label=paste0(value,"%")), position=position_dodge(width=1), hjust=-0.5)+
   theme_bw() +scale_fill_brewer(palette = "Set1")+
   labs( x = "", y="%", fill="")+theme(text=element_text(size=16, face="bold"))
-  }, width=1500, height=700)
+  }, width=1500, height=700) %>% bindCache(input$viol)
 
 
 
@@ -6062,7 +6074,7 @@ renderGirafe({if(input$violence_sexual%in%c("Age","Education","Employment","Resi
                      opts_hover(css = "fill:#666666;cursor:pointer;"),
                      opts_selection(css = "fill:orange;", type = "multiple"),
                      opts_zoom(max = 6)), width=15, height=5)
-  print( viol3x)
+  print(viol3x)
   }}) %>% bindCache(input$violence_sexual)
 
 
@@ -6185,7 +6197,7 @@ renderGirafe({if(input$violence_spouse!="County"){
                      opts_hover(css = "fill:#666666;cursor:pointer;"),
                      opts_selection(css = "fill:orange;", type = "multiple"),
                      opts_zoom(max = 6)), width=15, height=5)
-  print( spouse2x)
+  print(spouse2x)
   }}) %>% bindCache(input$violence_spouse)
 
 
@@ -6567,7 +6579,7 @@ effect_female_circumcision <- fread('data/table_18/table_18.10_Effect_of_female_
 renderPlot({ggplot(effect_female_circumcision[effect_female_circumcision$Characteristic%in%input$effect_female_circumcision,],aes(y=value, x=reorder(variable,value), fill=Category)) +coord_flip()+
   geom_col(position="dodge") + geom_text(aes(label=paste0(value,"%")), position=position_dodge(0.7), vjust=-0.5)+
   theme_bw() +scale_fill_brewer(palette = "Set1")+
-  labs( x = "", y="%", fill="")+theme(text=element_text(size=20, face="bold"))}, width=1500, height=700)
+  labs( x = "", y="%", fill="")+theme(text=element_text(size=20, face="bold"))}, width=1500, height=700)%>% bindCache(input$effect_female_circumcision)
 
 
 
@@ -6598,7 +6610,7 @@ help_seeking_women$Category <- fct_relevel(help_seeking_women$Category,
 renderPlot({ggplot(help_seeking_women[help_seeking_women$`Background characteristic`%in%input$help_seeking_women,],aes(y=value, x=Category, fill=variable)) +
   geom_col(position="dodge") + geom_text(aes(label=paste0(value,"%")), position=position_dodge(0.7), vjust=-0.5)+
   theme_bw() +scale_fill_brewer(palette = "Set1")+
-  labs( x = "", y="%", fill="")+theme(text=element_text(size=20, face="bold"))}, width=1500, height=700)
+  labs( x = "", y="%", fill="")+theme(text=element_text(size=20, face="bold"))}, width=1500, height=700) %>% bindCache(input$help_seeking_women)
 
 
 
@@ -6638,7 +6650,7 @@ renderPlot({
   scale_fill_gradient2()+
     labs(x="Indicator", y="County", fill="% change")+
     theme(text=element_text(size=14, face="bold"))
-}, width=900, height=600)
+}, width=900, height=600)%>% bindCache(input$category1)
 
 
 
@@ -6677,7 +6689,7 @@ renderGirafe({
                      opts_zoom(max = 9)),)
   print( trends_map2, justify="left")
   
-})
+}) %>% bindCache(input$trends)
 
 
 ```
@@ -6700,9 +6712,9 @@ selectInput("ind_comp", "",
 ```{r}
 
 renderGirafe({
-  comp_data1 <-comparison_data2 |>filter(Category%in%input$ind_comp) 
+  #comp_data1 <- 
 
-  comp_data_map<- ggplot(comp_data1, aes(fill=Proportion)) + 
+  comp_data_map<- ggplot(comparison_data2 |>filter(Category%in%input$ind_comp), aes(fill=Proportion)) + 
     geom_sf_interactive(aes(tooltip=paste0(Name, " ",Proportion,"%")))+
     facet_grid(~Prop)+
   theme_void() +
@@ -6713,19 +6725,20 @@ renderGirafe({
                      opts_hover(css = "fill:#666666;cursor:pointer;"),
                      opts_selection(css = "fill:orange;", type = "multiple"),
                      opts_zoom(max = 9)),)
-  print( comp_map2, justify="right")
+  print(comp_map2, justify="right")
   
-})
+}) %>% bindCache(input$ind_comp)
 ```
 
 ### .
 
 ```{r}
 renderPlot({
-  comp_data1a <-comparison_data1 |>filter(Category%in%input$ind_comp)|>filter(Prop%in%c("Proportion (2022)", "Proportion (2014)")) 
+  #comp_data1a <- 
   
 
-  ggplot(comp_data1a, aes(x=reorder(County, Proportion), y=Proportion, fill=factor(year))) + 
+  ggplot(comparison_data1 |> filter(Category%in%input$ind_comp, Prop%in%c("Proportion (2022)", "Proportion (2014)")), 
+         aes(x=reorder(County, Proportion), y=Proportion, fill=factor(year))) + 
   geom_col() +coord_flip()+ facet_grid(~year)+
   theme_bw() + 
     scale_fill_brewer(palette = "Set1")+
@@ -6734,7 +6747,7 @@ renderPlot({
   labs(x="Counties", y="",fill="") +
   theme(text =element_text(size=18, face="bold"))
   
-}, width = 900, height=700)
+}, width = 900, height=700) %>% bindCache(input$ind_comp)
 ```
 
 # Compare indicators by county
@@ -6888,7 +6901,16 @@ selectInput("comp_indicator2", "",
 
 
 renderGirafe({
-  combined_data1<- left_join(combined_data[combined_data$indicator1%in%input$comp_indicator1,]|>select(-indicator), combined_data[combined_data$indicator1%in%input$comp_indicator2, ]|>rename(indicator2=indicator1, values2=values)|>select(-indicator))
+  
+  #filtered_data1 <- 
+  
+  #filtered_data2 <- 
+  
+  combined_data1 <- left_join(combined_data |> filter(indicator1 %in% input$comp_indicator1) |> select(-indicator), 
+                              combined_data |> filter(indicator1 %in% input$comp_indicator2) |> rename(indicator2 = indicator1, values2 = values) |>
+                              select(-indicator)
+                              )
+  
   combined_map<- ggplot(combined_data1, aes(x=values, y=values2))+
   geom_point_interactive(size=4, aes(tooltip=County), color="cyan4")+
   theme_bw()+
@@ -6900,7 +6922,7 @@ renderGirafe({
                      opts_hover(css = "fill:#666666;cursor:pointer;"),
                      opts_selection(css = "fill:orange;", type = "multiple"),
                      opts_zoom(max = 4)), width=20, height=8)
-  print( combined_map2)
+  print(combined_map2)
 })
 
 #paste0(input$comp)
@@ -6914,11 +6936,12 @@ renderGirafe({
 ```{r,fig.width=6,fig.height=6}
 #
 renderGirafe({
-combined_data1<- left_join(county, combined_data[combined_data$indicator1%in%input$comp_indicator1,]|>select(-indicator), by=c("Name"="County"))
-  indicator_map1<- ggplot(combined_data1, aes(fill=values))+
-  geom_sf_interactive(aes(tooltip=paste0(Name,": ",round(values))))+
-  theme_void()+scale_fill_gradient(low = "#fee6ce", high = "#7f2704")+
-  labs(y="", x="", fill="")
+  
+  combined_data1<- left_join(county, combined_data[combined_data$indicator1%in%input$comp_indicator1,]|>select(-indicator), by=c("Name"="County"))
+    indicator_map1<- ggplot(combined_data1, aes(fill=values))+
+    geom_sf_interactive(aes(tooltip=paste0(Name,": ",round(values))))+
+    theme_void()+scale_fill_gradient(low = "#fee6ce", high = "#7f2704")+
+    labs(y="", x="", fill="")
   
    indicator_map1x<-girafe(ggobj =  indicator_map1,
                    options = list(
